@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../estilos/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.Pelea">
+   <children>
+      <ImageView fitHeight="411.0" fitWidth="662.0" layoutX="-29.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@One%20Piece/fondoPelea1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagenPJ1" fitHeight="356.0" fitWidth="409.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="157.0" fitWidth="162.0" layoutX="424.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Nueva%20carpeta/Luffy/Estatico/ezgif.com-gif-maker%20(2).gif" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="pj1Vida" layoutX="21.0" layoutY="24.0" prefHeight="25.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="pj2Vida" layoutX="386.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" progress="0.0" />
+      <Button fx:id="ataque1" disable="true" layoutX="21.0" layoutY="94.0" mnemonicParsing="false" onAction="#pelea" prefHeight="36.0" prefWidth="68.0" styleClass="boton" text="Ataque" />
+      <Button fx:id="ataque2" disable="true" layoutX="515.0" layoutY="94.0" mnemonicParsing="false" onAction="#pelea" prefHeight="36.0" prefWidth="68.0" styleClass="boton" text="Ataque" />
+      <Label fx:id="labelPJ1" layoutX="21.0" layoutY="6.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="labelPJ2" alignment="CENTER_RIGHT" layoutX="386.0" layoutY="6.0" prefHeight="17.0" prefWidth="200.0" />
+      <ImageView fx:id="imagenPJ2" fitHeight="356.0" fitWidth="409.0" layoutX="191.0" layoutY="130.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="pj2Especial" layoutX="444.0" layoutY="64.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="142.0" progress="0.0" />
+      <ProgressBar fx:id="pj1Especial" layoutX="18.0" layoutY="64.0" prefHeight="18.0" prefWidth="142.0" progress="0.0" />
+      <Button fx:id="especial1" disable="true" layoutX="92.0" layoutY="94.0" mnemonicParsing="false" onAction="#especial1" prefHeight="36.0" prefWidth="68.0" styleClass="boton" text="Especial" />
+      <Button fx:id="especial2" disable="true" layoutX="444.0" layoutY="94.0" mnemonicParsing="false" onAction="#especial2" prefHeight="36.0" prefWidth="68.0" styleClass="boton" text="Especial" />
+      <ImageView fx:id="imagenEspecial" disable="true" fitHeight="411.0" fitWidth="800.0" layoutX="-100.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

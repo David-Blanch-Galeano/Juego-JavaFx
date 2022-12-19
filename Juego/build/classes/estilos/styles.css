@@ -1,0 +1,21 @@
+.column-header{
+    -fx-background-color:  #B5F7FF;
+    
+}
+
+.table-row-cell{
+    -fx-background-color: #A2DAE1;
+    -fx-border-style: hidden;
+}
+
+.table-row-cell:selected{
+    -fx-background-color: #68D2E0;
+    -fx-border-style: hidden;
+}
+
+.boton {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
